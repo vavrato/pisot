@@ -57,9 +57,9 @@ def FINDMIN(A,k,N,units):
     '''
     deg = N.absolute_degree()
     if (deg == 2) or (deg % 2 == 1):
-        delta = log(1.32)/deg
+        delta = log(1.32)
     else:
-        delta = (1/(4*deg))*(log(log(deg))/log(deg))^3
+        delta = (1/4)*(log(log(deg))/log(deg))^3
     p = MixedIntegerLinearProgram(maximization = False)    #beware: glpk solver, although being quite fast, sometimes returns a non-admissible solution
     
     B = copy(A)
@@ -99,7 +99,7 @@ def CUTEDGE(A,k,N,units):
     if (deg == 2) or (deg % 2 == 1):
         delta = log(1.32)
     else:
-        delta = (1/(4*deg))*(log(log(deg))/log(deg))^3
+        delta = (1/4)*(log(log(deg))/log(deg))^3
     M = copy(A)
     out = FINDMIN(M,k,N,units)
     unumber = out[0]
