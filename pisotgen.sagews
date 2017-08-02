@@ -1,4 +1,3 @@
-︠2fe16781-d196-418b-ac5b-a0037b78f182s︠
 proof.number_field(False) #GRH is assumed, makes computation of fundamental units run much faster
 global verbose     #set 1 for text output/debug
 global precision
@@ -171,18 +170,3 @@ f = x^2-5*x+1 # defining polynomial for the field
 emb = 1 # we choose an embedding
 i = inicialize(f,emb)
 CUTEDGE(i[0],i[1],i[2],i[3]).N(precision)
-︡05c5a3f2-97ad-47dc-b137-c7fa1a662a98︡{"stdout":"g\nComputing the units...\nDONE!\n-------------------\nhello\n0.208712152522080\nThe roots of the polynomial are (not showing the complex conjugates): \n0: 0.20871215252207999670597640313599575550777171161601404869637893804656578723\n1: 4.7912878474779200032940235968640042444922282883839859513036210619534342128\n\nYour field is determined by the 0-th root in the previous list (indexing from zero)\n-------------------\nUnits of the field are: (g,)\n-------------------\nThe Log matrix is: \n[-1.5667992369724110786640568625804834938620823510926588639329459980122148135]\n[ 1.5667992369724110786640568625804834938620823510926588639329459980122148135]\n-------------------\n"}︡{"stdout":"FINDMIN solves the following: \n\nMinimization:\n  -1.56679923697 x_0 \n\nConstraints:\n  1.56679923697 x_0 <= -0.277631736598\n  1.56679923697 x_0 <= 0.0\nVariables:\n  x_0 is an integer variable (min=-oo, max=+oo)\n-------------------\nThe optimal value of FINDMIN is achieved at: (-1.0)\nThe U-number output of FINDMIN is: 4.79128784747792 with minimal polynomial x^2 - 5*x + 1\n\t* and it is (complex) Pisot with conjugates:\n\t[4.79128784747792, 0.208712152522080]\n!!!WARNING!!!\n4.7912878474779200032940235968640042444922282883839859513036210619534342128\n"}︡{"done":true}︡
-︠9dd35e27-66ff-4fe7-98fc-29eed3fe5329s︠
-
-︡a9a0afe8-e127-4e5b-aaba-101b2e676ab4︡{"done":true}︡
-︠a5baa45c-d3dd-4785-88ab-befc11e655f6︠
-
-
-
-
-
-
-
-
-
-
