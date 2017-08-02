@@ -1,4 +1,4 @@
 # pisot
-Find a Pisot generator of a number field
+Find a Pisot generator of a real number field!
 
-Use sagemath
+The .sagews is a worksheet file that can be run in Sagemath (for example at cocalc.com)
