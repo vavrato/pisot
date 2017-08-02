@@ -8,7 +8,7 @@ def msg(text):     #text output for verbose mode
         print text
 
 def inicialize(f,x):
-    ''' Inicialization of the fields, matrices, ...
+    ''' Initialization of the fields, matrices, ...
     
     Returns the Log-matrix, the embedding corresponding to the real generator closest to x, the corresponding number field, its fundamental system of units
     
@@ -19,8 +19,6 @@ def inicialize(f,x):
     units = NF.units()
     msg('DONE!')
     msg('-------------------')
-    print 'hello'
-    print g.N()
     emb = g.complex_embeddings(precision)
     ran = f.degree()-1
     indices = [(j,emb[j].is_real()) for j in xrange(ran) if emb[j].conjugate() != emb[j+1]] + [(ran,emb[ran].is_real())]    #indices of embeddings when each first of a complex pair is omitted; together with an information if the embedding is real
@@ -59,7 +57,7 @@ def FINDMIN(A,k,N,units):
     '''
     deg = N.absolute_degree()
     if (deg == 2) or (deg % 2 == 1):
-        delta = log(1.32)
+        delta = log(1.32)/deg
     else:
         delta = (1/(4*deg))*(log(log(deg))/log(deg))^3
     p = MixedIntegerLinearProgram(maximization = False)    #beware: glpk solver, although being quite fast, sometimes returns a non-admissible solution
